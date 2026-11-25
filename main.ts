@@ -15,7 +15,8 @@
 //  6. Also: a Russian strike kills 2 in Ukraine; US weighs tariffs on China
 //     and the EU; a Houthi drone injures 11 in Riyadh; North Korea expels a
 //     Swiss envoy; Solomon Islands names Australia its security partner.
-//  Markets at the 24 Nov close: S&P 500 +4.7%, Nasdaq +6.5%, gold $3,620.
+//  Markets at the 24 Nov close: Dow 50,019 +0.9% (first close above 50,000),
+//  S&P 500 -0.5%, Nasdaq -1.5%, gold $3,552, Brent $91.40.
 
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -473,7 +474,7 @@ function buildPage(): Canvas {
     M, 950, R - M, 2, INK, 4,
   );
   cv.hline(M, R, 996, RULE, 1);
-  cv.textCentered('MARKETS: S&P 500 +4.7%  —  NASDAQ +6.5%  —  GOLD $3,620  —  BRENT $86.7', 1004, 2, NAVY);
+  cv.textCentered('MARKETS: DOW +0.9% — S&P 500 -0.5% — NASDAQ -1.5% — GOLD $3,552 — BRENT $91.40', 1004, 2, NAVY);
 
   return cv;
 }
